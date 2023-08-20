@@ -1,0 +1,19 @@
+@import '../../../../../styles/typography.scss'; 
+@import '../../../../../styles/variables.scss';
+
+.card__listItem {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px
+}
+
+.card__title {
+  @include boldH6($black);
+  padding-bottom: 4px;
+}
+
+.card__text {
+  @include regularP3($darkGray);
+}

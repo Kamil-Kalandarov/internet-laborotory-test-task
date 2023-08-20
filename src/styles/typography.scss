@@ -1,0 +1,135 @@
+$mainFont: 'Graphik LCG';
+$fontWeightRegular: 400;
+$fontWeightBold: 600;
+
+@mixin main($color) {
+  font-family: $mainFont;
+  color: $color;
+  font-style: normal;
+}
+
+@mixin h1 {
+  font-size: 52px;
+  line-height: 64px;
+  margin: 0;
+}
+
+@mixin h2 {
+  font-size: 40px;
+  line-height: 56px;
+  margin: 0;
+}
+
+@mixin h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+}
+
+@mixin h4 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+@mixin h5 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+@mixin h6 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+@mixin p1 {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+@mixin p2 {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+@mixin p3 {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+@mixin p4 {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+@mixin boldH1($color) {
+  font-weight: $fontWeightBold;
+  @include main($color);
+  @include h1();
+}
+
+@mixin boldH2($color) {
+  font-weight: $fontWeightBold;
+  @include main($color);
+  @include h2();
+}
+
+@mixin boldH3($color) {
+  font-weight: $fontWeightBold;
+  @include main($color);
+  @include h3();
+}
+
+@mixin boldH4($color) {
+  font-weight: $fontWeightBold;
+  @include main($color);
+  @include h4();
+}
+
+@mixin boldH5($color) {
+  font-weight: $fontWeightBold;
+  @include main($color);
+  @include h5();
+}
+
+@mixin boldH6($color) {
+  font-weight: $fontWeightBold;
+  @include main($color);
+  @include h6();
+}
+
+@mixin boldP1($color) {
+  font-weight: $fontWeightBold;
+  @include main($color);
+  @include p1();
+}
+
+@mixin regularP1($color) {
+  font-weight: $fontWeightRegular;
+  @include main($color);
+  @include p1();
+}
+
+@mixin regularP2($color) {
+  font-weight: $fontWeightRegular;
+  @include main($color);
+  @include p2();
+}
+
+@mixin regularP3($color) {
+  font-weight: $fontWeightRegular;
+  @include main($color);
+  @include p3();
+}
+
+@mixin regularP4($color) {
+  font-weight: $fontWeightRegular;
+  @include main($color);
+  @include p4();
+}

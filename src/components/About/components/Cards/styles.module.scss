@@ -1,0 +1,33 @@
+@import '../../../../styles/typography.scss';
+@import '../../../../styles/variables.scss';
+
+.cards__list {
+  max-width: 1216px;
+  list-style: none;
+  padding: 61px 0 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 64px;
+  row-gap: 32px;
+  margin: 0;
+
+  @media (max-width: 1190px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 880px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 42px;
+  }
+
+  @media (max-width: 570px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: 375px) {
+    padding-top: 26px;
+  }
+}

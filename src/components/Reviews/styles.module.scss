@@ -1,0 +1,10 @@
+@import '../../styles/typography.scss';
+@import '../../styles/variables.scss';
+
+.reviews {
+  height: 564px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $extralight-gray;
+}

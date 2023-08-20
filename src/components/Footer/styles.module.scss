@@ -1,0 +1,15 @@
+@import '../../styles/typography.scss';
+@import '../../styles/variables.scss';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  height: 80px;
+  border-top: 1px solid $lightGray
+}
+
+.footer__text {
+  @include regularP1($black);
+}

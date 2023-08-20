@@ -1,0 +1,60 @@
+@import '../../../../styles/typography.scss';
+@import '../../../../styles/variables.scss';
+
+.mainInfo {
+  max-width: 1216px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 80px 20px 0;
+
+  @media(max-width: 600px) {
+    flex-direction: column-reverse;
+    padding: 0 17px;
+  }
+  @media(max-width: 768px) {
+    padding-top: 56px;
+    gap: 29px;
+  }
+  @media(max-width: 375px) {
+    gap: 7px;
+  }
+  @media(max-width: 320px) {
+    gap: 27px;
+  }
+}
+
+.mainInfo__content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  @media (max-width: 320px) {
+    gap: 7px;
+    text-align: center;
+  }
+}
+
+.mainInfo__title {
+  @include boldH3($black);
+
+  @media (max-width: 768px) {
+    @include boldH5($black)
+  }
+  @media (max-width: 375px) {
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+.mainInfo__text {
+  @include regularP2($darkGray)
+}
+
+.mainInfo__image {
+  width: 50%;
+
+  @media (max-width: 600px) {
+    width: 70%;
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../styles/typography.scss';
+@import '../../styles/variables.scss';
+
+.dropDownMenu {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.dropDownMenu__header {
+  height: 80px;
+  width: 100%;
+}
+
+.dropDownMenu__navList {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropDownMenu__navListItem {
+  padding-right: 50px
+}
+
+.dropDownMenu__link {
+  @include regularP1($gray);
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 16px 0;
+  cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
+}
+
+.dropDownMenu__navLinkItem:first-child {
+  padding-top: 0;
+}
+
+.dropDownMenu__link_active {
+  @extend .dropDownMenu__link;
+  @include regularP1($gray);
+  text-decoration: underline;
+  cursor: default;
+}

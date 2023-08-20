@@ -1,0 +1,29 @@
+@import '../../../../styles/typography.scss';
+@import '../../../../styles/variables.scss';
+
+.logo {
+  width: 108px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  position: absolute;
+  top: 29px;
+  left: 16px;
+}
+
+.logo__circleContainer {
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+
+.logo_type_blue {
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+
+.logo__title {
+  @include boldH5($black);
+}
