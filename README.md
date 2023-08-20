@@ -6,7 +6,7 @@
 - [Установка](#getting-started); 
 - [Планы по доработке](#will-do);
 - [Demo](#demo-link);
-- [Мои контакты](#contacts);https://reqres.in/
+- [Мои контакты](#contacts);
 
 ## <a name='functionality'>**Функциональность:**</a>
 - Рекламный лендинг со сладйдером
