@@ -4,7 +4,21 @@
 .reviews {
   height: 564px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 32px;
   background-color: $extralight-gray;
+
+  @media (max-width: 375px) {
+    gap: 26;
+  }
+}
+
+.reviews__title {
+  @include boldH2($black);
+
+  @media (max-width: 375px) {
+    @include boldH4($black)
+  }
 }
